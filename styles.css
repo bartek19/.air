@@ -1,14 +1,72 @@
-html {
-    height: 100%;
+body{
+    font-family: 'Uber Move Medium';
 }
-#bg {
+.intro {
+    margin-top:1000px;
+}
+.nav{
+    background-color: #000000;
     position: fixed;
     left: 0px;
     top: 0px;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    z-index: 1;
+    width: 100%;
+    transition: top 0.3s;  
+}
+.menu{
+    margin-left: 10%;
+}
+.menu a img{
+    width:50px;
+    float: left;
+}
+
+ul li{
+    display: inline-block;
+    padding:10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px / 17px;
+}
+ul li:hover {
+    background-color: rgb(68, 68, 68);
+    color: black;
+    transition-duration: 0.5s;
+    }
+#right{
+    float: right;
+}
+.logo{
+    float: left;
+    position:absolute;
+    left:2%;
+    top:10px;
+}
+.logo:hover{
+    background-color: #000000;
+}
+.register{
+    background-color: #ffffff;
+    margin-right:1%;
+    margin-left: 1%;
+}
+.register a{
+    color: #000000;
+}
+.register:hover{
+    background-color: rgb(219, 215, 215);
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.container{
+    
 }
