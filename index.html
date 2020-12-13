@@ -2,12 +2,103 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
 
         <title>.air</title>>
     </head>
     <body>
-        <video id="bg" autoplay="autoplay" loop="loop">
-            <source src="background_video.mp4" type="video/mp4" />
-        </video>        
+
+        <nav class="nav" id="navbar">
+ 
+            <div class="menu">  
+                        <ul>
+                            <li class="logo"><a href="index.html"><img src="resources/logos/logo_black.png"></a></li>
+                            <li><a href="about">O nas</a></li>
+                            <li><a href="offer">Oferta</a></li>
+                            <li><a href="fleet">Flota</a></li>
+                            <li><a href="contact">Kontakt</a></li>
+                            <li class="register" id="right"><a href="register">Zarejestruj się</a></li>
+                            <li id="right"><a href="log_in">Zaloguj się</a></li>
+                        </ul>
+                         
+            </div>
+
+        </nav>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            } else {
+            document.getElementById("navbar").style.top = "-10%";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
+        <header class="header">
+            <video id="bg" autoplay loop muted >
+                <source src="resources/background_video.mp4" type="video/mp4" />
+            </video>  
+        </header>
+        <div class="container">
+        </div>
+        <div class="intro">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Wznieś się ponad miastem</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+                        <button class="button button4" style="margin-top:30px;"><h4 style="vertical-align: center;margin:0;">Sprawdź ofertę!</h4></button>
+                    </td>
+                    <td>
+                        <img src="cartoon_heli.jpg" width="500px" style="margin:0px 110px 0 200px">
+                    </td>
+
+                </tr>
+            </table>    
+        </div>
+        <div class="images">
+            <img src="heli_5.gif" height="217px" vspace="0" hspace="0" style="margin:0px;padding:0;">
+            <img src="heli_2.jpg" height="217px" vspace="0" hspace="0" style="margin:0px;padding:0;">
+            <img src="heli|_8.jpg" height="217px">
+            <img src="heli_1.jpg" height="217px">
+
+        </div>
+        <div class="pros">
+            <h1 style="text-align:center;">Co zyskujesz?</h1>
+            <table class="tcenter">
+                <tr>
+                    <td><img src="save-time.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                    <td><img src="shield.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                    <td><img src="location.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                </tr>
+                <tr style="text-align:center;">
+                    <td><h3>Czas</h3></td>
+                    <td><h3>Bezpieczeństwo</h3></td>
+                    <td><h3>Elastyczność</h3></td>
+                </tr>
+                <tr>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Wznieś się ponad ruch drogowy, </br>omijaj korki i oszczędzaj czas.</h4></td>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Lotnictwo to najbezpieczniejszy </br>środek transportu ze wszystkich.</h4></td>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Zamów lot krajowy lub zagraniczny </br>w dowolnie wybrane miejsce docelowe.</h4></td>
+                </tr>
+            </table>
+        </div>
+        <div class="join">
+            <table>
+                <tr>
+                    <td>
+                        <img src="pilot.jpg" width="500px" style="margin:0px 100px 0 110px">
+                    </td>
+                    <td>
+                        <h1>Dołącz do załogi .air!</h1>
+                        <h4 style="word-wrap: break-word;padding-right:110px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+                    </td>
+                </tr>
+            </table>
+        </div>
+          
     </body>
 </html>
