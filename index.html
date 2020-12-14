@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <title>.air</title>>
     </head>
@@ -42,7 +43,40 @@
                 <source src="resources/background_video.mp4" type="video/mp4" />
             </video>  
         </header>
-        <div class="container">
+        <div class="container"> 
+                <div class="order">
+                    <h1>Zamów lot teraz!</h1>
+                    <form>
+                        <label for="departure" >Podaj miejsce odbioru</label>
+                        <input type="text" id="address-input" placeholder="Try me! :)">
+
+                            <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+                            <script>
+                            var placesAutocomplete = places({
+                                appId: 'plT88IGGOEEB',
+                                apiKey: 'efb94b03f79fdad750de6c367f1fec25',
+                                container: document.querySelector('#address-input')
+                            });
+                            </script>
+
+                        <label class="arrival" for="arrival">Wybierz miejsce docelowe</label>
+                        <input type="text" id="arrival-input">
+                        <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+                        <script>
+                        var placesAutocomplete = places({
+                            appId: 'plT88IGGOEEB',
+                            apiKey: 'efb94b03f79fdad750de6c367f1fec25',
+                            container: document.querySelector('#arrival-input')
+                        });
+                        </script>
+                      </form>
+                      
+                      <ul>
+                          <li class="order_button"><a href="order.html">Zamów lot</a></li>
+                          <li class="plan_button"><a href="order.html">Zaplanuj na później</a></li>
+                      </ul>
+                      
+                </div>
         </div>
         <div class="intro">
             <table>
@@ -50,20 +84,23 @@
                     <td>
                         <h1>Wznieś się ponad miastem</h1>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-                        <button class="button button4" style="margin-top:30px;"><h4 style="vertical-align: center;margin:0;">Sprawdź ofertę!</h4></button>
+                        <li class="check_offer"><a href="offer">Sprawdź ofertę!</a></li>
                     </td>
                     <td>
-                        <img src="cartoon_heli.jpg" width="500px" style="margin:0px 110px 0 200px">
+                        <img src="resources/imgs/cartoon_heli.jpg">
                     </td>
 
                 </tr>
             </table>    
         </div>
         <div class="images">
-            <img src="heli_5.gif" height="217px" vspace="0" hspace="0" style="margin:0px;padding:0;">
-            <img src="heli_2.jpg" height="217px" vspace="0" hspace="0" style="margin:0px;padding:0;">
-            <img src="heli|_8.jpg" height="217px">
-            <img src="heli_1.jpg" height="217px">
+            <ul>
+                <li class="img"><img src="resources/imgs/heli_5.gif"></li>
+               
+            </ul>
+            
+            
+            
 
         </div>
         <div class="pros">
