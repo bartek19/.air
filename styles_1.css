@@ -2,17 +2,15 @@
     background-color: #000000;
     padding: 10px;
     width: 30%;
-<<<<<<< HEAD
+    margin:auto;
+    margin-top:8%;
 }
 .regfield{
     background-color: #000000;
     position: relative;
     width: 30%;
 }
-=======
-    margin:auto;
-    margin-top:8%;
-}
+
 .logfield label{
     font-size: 1.3vw;
     margin-left: 40px;
@@ -57,4 +55,3 @@
     .logfield {
       width: 80%;
     }
->>>>>>> cecaade61db8084a52a3de24cbdcdfb79c8179e8
