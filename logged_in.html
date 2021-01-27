@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="resources/icons/black-circle.svg">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <title>.air</title>>
+    </head>
+    <body>
+
+        <nav class="nav" id="navbar">
+ 
+            <div class="menu">  
+                        <ul>
+                            <li class="logo"><a href="index.html"><img src="resources/logos/logo_black.png"></a></li>
+                            <li><a href="#about">O nas</a></li>
+                            <li><a href="offer">Oferta</a></li>
+                            <li><a href="fleet">Flota</a></li>
+                            <li><a href="contact">Kontakt</a></li>
+                            
+                        </ul>
+                         
+            </div>
+
+        </nav>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            } else {
+            document.getElementById("navbar").style.top = "-10%";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
+        <header class="header">
+            <video id="bg" autoplay loop muted >
+                <source src="resources/background_video.mp4" type="video/mp4" />
+            </video>  
+        </header>
+        <div class="container"> 
+                <div class="order">
+                    <h1>Zamów lot teraz!</h1>
+                    <form>
+                        <label for="departure" >Podaj miejsce odbioru</label>
+                        <input type="text" id="address-input" placeholder="Try me! :)">
+
+                            <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+                            <script>
+                            var placesAutocomplete = places({
+                                appId: 'plT88IGGOEEB',
+                                apiKey: 'efb94b03f79fdad750de6c367f1fec25',
+                                container: document.querySelector('#address-input')
+                            });
+                            </script>
+
+                        <label class="arrival" for="arrival">Wybierz miejsce docelowe</label>
+                        <input type="text" id="arrival-input">
+                        <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+                        <script>
+                        var placesAutocomplete = places({
+                            appId: 'plT88IGGOEEB',
+                            apiKey: 'efb94b03f79fdad750de6c367f1fec25',
+                            container: document.querySelector('#arrival-input')
+                        });
+                        </script>
+                      </form>
+                      
+                      <ul>
+                          <li class="order_button"><a href="order.html">Zamów lot</a></li>
+                          <li class="plan_button"><a href="order.html">Zaplanuj na później</a></li>
+                      </ul>
+                      
+                </div>
+        </div>
+        <div class="intro" id="about">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Wznieś się ponad miastem</h1>
+                        <h4>Czy kiedykolwiek jadąc autem pomyślałeś, że najlepszą opcją byłoby unieść się teraz w powietrze i ominąć cały ruch drogowy? 
+                        Wystarczy spojrzeć na zakorkowane miasta i nieustające remonty, aby przekonać się, że przyszłość transportu należy do lotnictwa. .air to rozwiązanie pozwalające na zamawianie lotów helikopterem w Twoim mieście!</h4>
+                        
+                            <li class="check_offer"><a href="offer">Sprawdź ofertę!</a></li>
+                            <li class="where"><a href="#">Gdzie latamy?</a></li>
+                        
+                        
+                    </td>
+                    <td>
+                        <img src="resources/imgs/cartoon_heli.jpg">
+                    </td>
+
+                </tr>
+            </table>    
+        </div>
+     
+               <div class="panorama">
+                   <img src="resources/imgs/900944.jpg" style="width: 100%;height: 20vw;">
+               </div>
+               
+        <div class="pros">
+            <h1 class="textcenter">Co zyskujesz?</h1>
+            <table class="tcenter">
+                <tr>
+                    <td><img src="resources/imgs/save-time.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                    <td><img src="resources/imgs/shield.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                    <td><img src="resources/imgs/location.png" height="120px" style="margin:0 120px 0 120px;"></td>
+                </tr>
+                <tr style="text-align: center;margin-top: 20px;">
+                    <td><h3>Czas</h3></td>
+                    <td><h3>Bezpieczeństwo</h3></td>
+                    <td><h3>Elastyczność</h3></td>
+                </tr>
+                <tr>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Wznieś się ponad ruch drogowy, </br>omijaj korki i oszczędzaj czas.</h4></td>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Lotnictwo to najbezpieczniejszy </br>środek transportu ze wszystkich.</h4></td>
+                    <td><h4 style="word-wrap: break-word;padding-left:40px;margin-top:10px;" width="25%">Zamów lot krajowy lub zagraniczny </br>w dowolnie wybrane miejsce docelowe.</h4></td>
+                </tr>
+            </table>
+        </div>
+        <div class="join">
+            <table>
+                <tr>
+                    <td>
+                        <img src="resources/imgs/pilot.jpg" width="500px" style="margin:0px 100px 0 110px">
+                    </td>
+                    <td>
+                        <h1>Dołącz do załogi .air!</h1>
+                        <h4 style="word-wrap: break-word;padding-right:110px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+                    </td>
+                </tr>
+            </table>
+        </div>
+          
+        <footer>
+            Copyright .air &amp; WebDevelopers
+        </footer>
+    </body>
+</html>
