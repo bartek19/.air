@@ -63,6 +63,15 @@
     left: 0px;
     top: 8%;
 }
+
+.register{
+    background-color: #ffffff;
+    margin-right:1%;
+    margin-left: 1%;
+}
+.register a{
+    color: #000000;
+}
 @media screen and (max-width: 1300px) {
     .logfield {
       width: 80%;
