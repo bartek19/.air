@@ -5,11 +5,6 @@
     margin:auto;
     margin-top:8%;
 }
-.regfield{
-    background-color: #000000;
-    position: relative;
-    width: 30%;
-}
 
 .logfield label{
     font-size: 1.3vw;
@@ -24,15 +19,20 @@
     padding:5px;
     margin-bottom: 20px;
 }
+.logfield h1{
+    color: #ffffff;
+    font-size: 4vw;
+    margin-left: 40px;
+}
 .logotype{
     margin-left: 20%;
     margin-top: 5%;
 }
 #user {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 #imie{
-    margin-top: 50px;
+    margin-top: 10px;
 
 }
 .login_button {
@@ -54,6 +54,14 @@
     margin-left: 5%;
     padding:15px 25px;
 
+}
+#bottom_bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    left: 0px;
+    top: 8%;
 }
 @media screen and (max-width: 1300px) {
     .logfield {
