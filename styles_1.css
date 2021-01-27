@@ -28,8 +28,12 @@
     margin-left: 20%;
     margin-top: 5%;
 }
-#user{
+#user {
     margin-top: 50px;
+}
+#imie{
+    margin-top: 50px;
+
 }
 .login_button {
     background-color: #ffffff; 
