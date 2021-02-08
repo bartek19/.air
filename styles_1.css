@@ -24,6 +24,18 @@
     font-size: 4vw;
     margin-left: 40px;
 }
+.confirm{
+    background-color: #000000;
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+    margin-top:8%;
+}
+.confirm h1{
+    color: #ffffff;
+    font-size: 4vw;
+    margin-left: 40px;
+}
 .logotype{
     margin-left: 20%;
     margin-top: 5%;
