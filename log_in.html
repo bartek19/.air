@@ -7,20 +7,15 @@
         <link rel="stylesheet" type="text/css" href="styles_1.css"/>
         <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="data.js"></script>
         <script>
-<<<<<<< HEAD
-            function forgottenPassword() {
-                alert("Masz problem");
-            }
-        </script>
-=======
             function forgottenPassword(){
-                alert("Trzeba było pamiętać");
+                alert("Lepiej załóż nowe kotno");
             }
         </script>
+     
 
         <title>.air</title>
->>>>>>> 333e3a71e88d4e395796fa2f50ac8a80710a305d
 
     </head>
     <body>
@@ -49,13 +44,14 @@
         <div class="logfield">
             <h1>Logowanie</h1>
             <form>
-                <input type="email" id="user" placeholder="E-mail">
+                <input type="text" id="email" placeholder="E-mail">
                 <input type="password" id="password" placeholder="Hasło">
+                <ul>
+                    <li class="login_button" onclick="getInfo()">Zaloguj</li>
+                    <li class="forget_button" onclick="forgottenPassword()"><a href="">Zapomniałeś hasła?</a></li>
+                </ul>
             </form>
-            <ul>
-                <li class="login_button"><a href="logged_in.html">Zaloguj</a></li>
-                <li class="forget_button" onclick="forgottenPassword()"><a href="">Zapomniałeś hasła?</a></li>
-            </ul>
+           
         </div>
 
        
