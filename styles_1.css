@@ -36,6 +36,16 @@
     font-size: 4vw;
     margin-left: 40px;
 }
+.ouroffer h1{
+    font-size: 4vw;
+    margin-left: 30%;
+}
+.ouroffer{
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+    margin-top:8%;
+}
 .logotype{
     margin-left: 20%;
     margin-top: 5%;

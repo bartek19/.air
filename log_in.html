@@ -7,6 +7,11 @@
         <link rel="stylesheet" type="text/css" href="styles_1.css"/>
         <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script>
+            function forgottenPassword() {
+                alert("Masz problem");
+            }
+        </script>
 
         <title>.air</title>>
     </head>
@@ -18,9 +23,9 @@
                         <ul>
                             <li class="logo"><a href="index.html"><img src="resources/logos/logo_black.png"></a></li>
                             <li><a href="index.html#about">O nas</a></li>
-                            <li><a href="offer">Oferta</a></li>
-                            <li><a href="fleet">Flota</a></li>
-                            <li><a href="contact">Kontakt</a></li>
+                            <li><a href="offer.html">Oferta</a></li>
+                            <li><a href="fleet.html">Flota</a></li>
+                            <li><a href="index.html#contact">Kontakt</a></li>
                             <li class="register" id="right"><a href="register.html">Zarejestruj się</a></li>
                             <li id="right"><a href="log_in.html">Zaloguj się</a></li>
                         </ul>
@@ -41,7 +46,7 @@
             </form>
             <ul>
                 <li class="login_button"><a href="logged_in.html">Zaloguj</a></li>
-                <li class="forget_button"><a href="">Zapomniałeś hasła?</a></li>
+                <li class="forget_button" onclick="forgottenPassword()"><a href="">Zapomniałeś hasła?</a></li>
             </ul>
         </div>
        

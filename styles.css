@@ -211,6 +211,9 @@ a{
 .join{
     margin-top: 200px;
 }
+.join h4{
+    line-height: 27px;
+}
 .panorama{
     position: absolute;
     left: 0px;
