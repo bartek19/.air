@@ -112,3 +112,20 @@
     margin-top:8%;
     margin-bottom: 100px;
 }
+    .contact{
+        margin-top: 20px;
+        padding: 10%;
+    }
+    .contact p{
+        width:50%;
+        margin-right: 150px;
+        line-height: 27px;
+    }
+    .contact h4{
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+    .contact h1{
+        margin-top: 0%;
+        margin-left: 45%;
+    }
