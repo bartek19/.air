@@ -98,3 +98,15 @@
     .logfield {
       width: 80%;
     }
+}
+
+.ourfleet h1{
+    font-size: 4vw;
+    margin-left: 30%;
+}
+.ourfleet{
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+    margin-top:8%;
+}
