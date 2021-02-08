@@ -27,6 +27,18 @@
                          
             </div>
         </nav>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            } else {
+            document.getElementById("navbar").style.top = "-10%";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
          <div class="ourfleet">
                 <h1>Nasza flota</h1>
         </div>
@@ -38,7 +50,7 @@
                     </td>
                     <td>
                         <h1>Robinson R44</h1>
-                        <h4 style="word-wrap: break-word;padding-right:110px;">Robinson R44 to najwyższe amerykańskie standardy, bezpieczeństwo i wysoka jakość wykonania. Dzięki swojej charakterystyce jest w stanie lądować nawet w bardzo trudno dostępnych miejscach, zapewniając komfort, prestiż i osiągi porównywalne z większymi helikopterami turbinowymi. </h4>
+                        <h4 style="word-wrap: break-word;padding-right:110px;line-height: 27px;">Robinson R44 to najwyższe amerykańskie standardy, bezpieczeństwo i wysoka jakość wykonania. Dzięki swojej charakterystyce jest w stanie lądować nawet w bardzo trudno dostępnych miejscach, zapewniając komfort, prestiż i osiągi porównywalne z większymi helikopterami turbinowymi. </h4>
                     </td>
                 </tr>
             </table>
