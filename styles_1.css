@@ -113,25 +113,30 @@
     margin-bottom: 100px;
 }
     .contact{
-        margin-top: 20px;
-        padding: 10%;
+        margin-top: 10%;
+        background-color: #000000;
+        color: #ffffff;
     }
     .contact p{
-        width:50%;
-        margin-right: 150px;
         line-height: 27px;
+        color: #ffffff;
+        margin-left: 15%;
+        padding-right: 10%;
     }
     .contact h4{
         margin-top: 50px;
         margin-left: 20%;
     }
     .contact h1{
-        margin-top: 0%;
         margin-left: 45%;
+        padding-top: 5%;
+        padding-bottom: 3%;
     }
     .contact h2{
         margin-left: 18%;
+        color: #ffffff;
     }
     .contact a{
-        color: #000000;
+        color: #ffffff;
     }
+    
